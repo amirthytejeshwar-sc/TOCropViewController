@@ -31,8 +31,8 @@ let package = Package(
             name: "TOCropViewController",
             path: "Objective-C/TOCropViewController/",
 			exclude:["Supporting/Info.plist"],
-//            resources: [.process("Resources")],
-            publicHeadersPath: "include",
+            resources: [.process("Resources")],
+            publicHeadersPath: "",
             cSettings: [
                 .headerSearchPath("."),
             ]
