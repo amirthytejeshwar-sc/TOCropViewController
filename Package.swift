@@ -34,7 +34,7 @@ let package = Package(
             resources: [.process("Resources")],
             publicHeadersPath: "include",
 	    cSettings: [
-                .headerSearchPath("."),
+                .headerSearchPath("../"),
             ]
         ),
         .target(
@@ -42,7 +42,8 @@ let package = Package(
             dependencies: ["TOCropViewController"],
             path: "Swift/CropViewController/",
 			exclude:["Info.plist"],
-            sources: ["CropViewController.swift"]
+            sources: ["CropViewController.swift"],
+		publicHeadersPath: ""
         )
     ]
 )
