@@ -35,14 +35,16 @@ let package = Package(
             publicHeadersPath: "include",
 	    cSettings: [
                 .headerSearchPath("../"),
-            ]
+            ],
+		cLanguageStandard: .c99,
+		cxxLanguageStandard: CXXLanguageStandard.gnucxx14
         ),
         .target(
             name: "CropViewController",
             dependencies: ["TOCropViewController"],
-            path: "Swift/CropViewController/",
+            path: "Swift/CropViewController",
 			exclude:["Info.plist"],
-            sources: ["CropViewController.swift"],
+            sources: [""],
 		publicHeadersPath: ""
         )
     ]
