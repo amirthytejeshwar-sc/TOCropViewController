@@ -35,9 +35,7 @@ let package = Package(
             publicHeadersPath: "include",
 	    cSettings: [
                 .headerSearchPath("../"),
-            ],
-		cLanguageStandard: .c99,
-		cxxLanguageStandard: CXXLanguageStandard.gnucxx14
+            ]
         ),
         .target(
             name: "CropViewController",
@@ -46,5 +44,8 @@ let package = Package(
 			exclude:["Info.plist"],
 		publicHeadersPath: ""
         )
-    ]
+    ],
+	
+		cLanguageStandard: .c99,
+		cxxLanguageStandard: CXXLanguageStandard.gnucxx14
 )
