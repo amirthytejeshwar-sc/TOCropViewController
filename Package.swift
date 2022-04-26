@@ -44,7 +44,6 @@ let package = Package(
             dependencies: ["TOCropViewController"],
             path: "Swift/CropViewController",
 			exclude:["Info.plist"],
-            sources: [""],
 		publicHeadersPath: ""
         )
     ]
